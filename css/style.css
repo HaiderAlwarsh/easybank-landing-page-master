@@ -1,0 +1,908 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+
+
+}
+
+.background {
+
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    height: 100vh;
+    top: 0;
+
+}
+
+/* __________ Header __________ */
+
+.nav-container {
+    background-color: hsl(220, 16%, 96%);
+    height: 7vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+    z-index: 999;
+
+}
+
+.logo {
+    margin-left: 1rem;
+}
+
+
+.burger {
+    width: 2.3rem;
+    margin-right: 1rem;
+    cursor: pointer;
+
+
+
+}
+
+.burger > div {
+    width: 80%;
+    height: .14rem;
+    background-color: hsl(0, 0%, 0%);
+    margin-bottom: .25rem;
+    position: relative;
+
+}
+
+.links {
+    font-weight: 700;
+    position: fixed;
+    top: 9vh;
+    width: 100%;
+    text-align: center;
+    display: none;
+
+}
+
+.links ul {
+
+    list-style: none;
+    padding: 1.5rem 1.5rem 1rem;
+    background-color: hsl(0, 0%, 100%);
+    margin: 0 auto;
+    width: 90%;
+    border-radius: .5rem;
+
+}
+
+.links li {
+    margin-bottom: 1rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.links.active {
+    display: block;
+}
+
+.line2.close2 {
+    display: none;
+}
+
+.line1.close1 {
+    transform: rotateZ(50deg);
+    top: .3rem;
+    height: .1rem;
+    width: 1rem;
+}
+
+.line3.close3 {
+    transform: rotateZ(-50deg);
+    height: .1rem;
+    width: 1rem;
+
+}
+
+/* __________ End of header __________ */
+
+
+
+/* __________ section 1 __________ */
+
+
+
+.section1 {
+    width: 100%;
+    height: 89vh;
+    overflow: hidden;
+
+}
+
+.sec1-container {
+    background: url(../images/bg-intro-mobile.svg) no-repeat;
+    background-position: top right;
+    background-size: 100% 55%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.image-container {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+
+.image-container img {
+    width: 100%;
+    height: 121%;
+    transform: translateY(-18.6%);
+
+
+}
+
+
+.text-container {
+    text-align: center;
+
+
+}
+
+.text-container h1 {
+    width: 100%;
+    font-size: 2.3rem;
+    color: hsl(233, 26%, 24%);
+
+}
+
+.text-container p {
+    margin: 1.5rem auto;
+    width: 91%;
+    font-size: .9rem;
+
+}
+
+.btn {
+    border: none;
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    width: 8.5rem;
+    height: 2.5rem;
+    outline: none;
+    border-radius: 2rem;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+
+
+/* __________ End of section 1 __________ */
+
+/* __________ section 2 __________ */
+
+
+.section2 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.sec2-container {
+    background-color: hsl(220, 16%, 96%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+
+}
+
+.part {
+    width: 95%;
+    margin: 0 auto 3rem;
+
+}
+
+.h1 {
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.paragraph {
+    font-size: .9rem;
+    padding: 1rem 0;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.image {
+    margin-bottom: 1.2rem;
+}
+
+
+.header {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.part-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+/* __________ End section 2 __________ */
+
+/* __________ section 3 __________ */
+
+.section3 {
+    width: 100%;
+    margin-bottom: 4rem;
+    overflow: hidden;
+}
+
+.sec3-container {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.card {
+    background-color: hsl(0, 0%, 98%);
+    width: 84%;
+    border-radius: .5rem .5rem 0 0;
+    margin: 2rem auto 0;
+
+}
+
+.card figure {
+    border-radius: 0.5rem .5rem 0 0;
+    overflow: hidden;
+}
+
+
+
+.card figure img {
+    width: 100%;
+    border-radius: 0.5rem .5rem 0 0;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.card figure img:hover{
+    transform: scale(1.1);
+}
+
+
+
+.under-img {
+
+    margin: .5rem 1.5rem;
+}
+
+.under-img h3 {
+    font-size: 84%;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.under-img h3:hover {
+    color: hsl(136, 65%, 51%);
+}
+
+
+
+.under-img p {
+    font-size: 69%;
+    padding: .5rem 0 1.5rem;
+    color: hsl(233, 8%, 62%);
+}
+
+.card figure figcaption {
+    color: hsl(233, 8%, 62%);
+    margin: 1rem 1.5rem 0;
+    font-size: .6rem;
+}
+
+/* __________ End section 3 __________ */
+
+/* __________ section 4 __________ */
+
+.section4{
+    width: 100%;
+    overflow: hidden;
+    height: 66vh;
+}
+
+.sec4-container{
+    background-color: hsl(233, 26%, 24%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bottomLogo{
+    padding-bottom: 1rem;
+}
+
+
+.social a {
+    margin: .3rem;
+}
+
+.social a i{
+    color: hsl(220, 16%, 96%);
+    font-size: 1.2rem;
+}
+
+.social a:hover i {
+    color:hsl(136, 65%, 51%);
+}
+
+
+
+.support ul li{
+    list-style: none;
+    margin-bottom: 1.2rem;
+}
+
+.support ul  a{
+    color: hsl(220, 16%, 96%);
+    text-decoration: none;
+}
+
+.first-three-ul, .last-three-ul{
+    width: 100;
+    height: 100%;
+
+}
+
+.support ul li:hover{
+    color:hsl(136, 65%, 51%);
+
+}
+
+.request .btn {
+    transform: translateY(-0.8rem);
+    margin-bottom: 1rem;
+}
+
+.request{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+@media only screen and (max-width:700px)  and (min-width:437px){
+
+
+   /* _________ Start section 1 _________ */ 
+
+        .text-container h1 {
+            max-width: 70%;
+            margin: auto;
+        }
+
+        .text-container p {
+            max-width: 82%;
+        }
+
+        .image-container {
+            text-align: center; 
+        }
+
+        .image-container img {
+            width: 85%;
+        }
+
+    /* _________ End section 1 _________ */ 
+
+
+    /* _________ start section 2 _________ */ 
+
+        .part-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .paragraph {
+            font-size: .7rem;
+        }
+
+        .part {
+            width: 48%;
+        }
+
+
+    /* _________ End section 2 _________ */ 
+
+
+    /* _________ Start section 3 _________ */ 
+
+        .h1 {
+            font-size: 1.4rem;
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            flex-flow: wrap;
+        }
+
+        .card {
+            width: 45%;
+        }
+
+        .header{
+            width: 60%;
+        }
+
+        .sec3-container .header {
+            width: 100%;
+        }
+
+    /* _________ End section 3 _________ */ 
+
+
+
+    /* _________ Start section 4 _________ */ 
+
+
+       .support ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: left;
+        margin-left: 2.5rem;
+
+        }
+
+        .section4 {
+            height: 50vh;
+        }
+
+        /* _________ End section 4 _________ */ 
+
+}
+
+
+@media only screen and (max-width:800px) and (min-width:701px){
+
+
+    /* _________ start section1 _________ */ 
+
+        .text-container h1 {
+            max-width: 70%;
+            margin: auto;
+        }
+
+        .text-container p {
+            max-width: 82%;
+        }
+
+        .image-container {
+            height: 56vh;
+            text-align: center; 
+        }
+
+        .image-container img {
+            width: 74%;
+        }
+    
+
+    /* _________ End section1 _________ */ 
+
+
+    /* _________ Start section2 _________ */ 
+    
+        .part-container {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .paragraph {
+            font-size: .7rem;
+        }
+
+        
+        .part {
+            width: 48%;
+        }
+
+        .h1 {
+            font-size: 1.3rem; 
+        }
+    
+
+    /* _________ End section2 _________ */ 
+
+
+    /* _________ Start section3 _________ */ 
+
+        .card-container {
+            display: flex;
+            flex-flow: wrap;
+        }
+
+        .card {
+            width: 45%;
+        }
+
+        .header{
+            width: 60%;
+        }
+    
+    /* _________ End section3 _________ */ 
+
+    
+    /* _________ Start section4 _________ */ 
+
+    .support ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: left;
+        
+    }
+
+        .section4 {
+            width: 100%;
+            overflow: hidden;
+            height: 53vh;
+        }
+
+    /* _________ End section4 _________ */ 
+  
+}
+
+
+@media only screen and (min-width:801px){
+
+
+    /* _________ Start header _________ */ 
+    
+    .nav-container .btn {
+        margin-right: 1rem;
+ 
+    }
+
+    .nav-container {
+        justify-content: space-around;   
+    }
+
+   .links {
+       font-weight: 0; 
+       position: unset; 
+       top: 0; 
+       width: 80%; 
+       text-align: unset; 
+       display: unset; 
+   }
+
+   .links ul {
+        background-color: unset;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .links li {
+     margin-left: 2rem;
+    }
+
+    .burger {
+
+        display: none;
+     }
+     
+
+     .links li a::after{
+        content: "";
+        transition: 1s;
+    }
+    
+    .links .li1:hover a::after, .links .li2:hover a::after {
+        content: "";
+        width: 3.1rem;
+        height: .2rem;
+        position: absolute;
+        background-color: hsl(136, 65%, 51%);
+        bottom: -28px;
+        left: 0;
+        transition: .5s;
+    }
+    
+    .links .li3:hover a::after {
+        content: "";
+        width: 4.1rem;
+        height: 0.2rem;
+        position: absolute;
+        background-color: hsl(136, 65%, 51%);
+        bottom: -28px;
+        left: 0;
+        
+    }
+    
+    .links .li4:hover a::after {
+        content: "";
+        width: 2.3rem;
+        height: .2rem;
+        position: absolute;
+        background-color: hsl(136, 65%, 51%);
+        bottom: -28px;
+        left: 0;
+        transition: .5s;
+    }
+    
+    .links .li5:hover a::after {
+        content: "";
+        width: 3.7rem;
+        height: .2rem;
+        position: absolute;
+        background-color: hsl(136, 65%, 51%);
+        bottom: -28px;
+        left: 0;
+        transition: .5s;
+    }
+    
+
+    /* _________ End header _________ */ 
+
+
+
+    /* _________ start section1 _________ */ 
+
+        .section1 {
+            height: 53vh;
+        }
+
+        .sec1-container {
+            background: url(../images/bg-intro-desktop.svg) no-repeat;
+            background-position: 159% 100%;
+            background-size: 64% 116%;
+            height: 114%;
+            flex-direction: row-reverse;
+        }
+
+        .text-container h1 {
+            max-width: 95%;
+            margin: auto;
+        }
+    
+        .text-container p {
+            font-size: .8rem;
+            width: 100%;
+        }
+
+        .text-container {
+            width: 41%;
+            text-align: left;
+            position: absolute;
+            left: 5%;
+            top: 16%;
+        }
+
+        .image-container {
+            width: 50%;
+            height: 59vh;
+            text-align: right;
+            position: absolute;
+        }
+    
+        .image-container img {
+            max-width: 85%;
+            height: 100%;
+            transform: translate(16.4%);
+        }
+    
+
+
+    /* _________ End section1 _________ */ 
+
+
+    /* _________ Start section2 _________ */ 
+
+
+    .part {
+        width: 20%;
+        margin: 0 auto 3rem;
+    }
+
+
+    .paragraph {
+        font-size: .7rem;
+    }
+
+    .part-container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .header {
+        width: 90%;
+        text-align: start;
+    }
+
+    .header p {
+        width: 40%;
+    }
+   
+
+
+    /* _________ End section2 _________ */ 
+
+    /* _________ Start section3 _________ */ 
+
+    .sec3-container .header h1{
+        margin-left: 3%;
+    }
+
+    .card-container {
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 20%;
+        margin: 2rem auto 0;
+    }
+
+
+    /* _________ End section3 _________ */ 
+
+
+    /* _________ Start section4 _________ */ 
+
+        .support ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            text-align: left;
+            margin-left: 2.5rem;
+
+        }
+
+        .section4 {
+            height: 20vh;
+        }
+
+        .sec4-container {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .support{
+            width: 43%;
+        }
+
+
+    /* _________ End section4 _________ */ 
+
+    
+
+    
+}
+
+
+
+
+@media only screen and (min-width:1200px){
+
+
+    /* _________ Start section1 _________ */
+
+        .image-container img {
+            max-width: 71%;
+        }
+
+        .image-container {
+            width: 42%;
+        }
+
+        .sec1-container {
+            background-size: 57% 116%;
+        }
+    
+        .text-container p {
+               font-size: 1rem;
+        
+        }
+    
+    /* _________ End section1 _________ */
+
+    /* _________ Start section2 _________ */
+
+        .paragraph {
+            font-size: 1rem;
+        }
+
+    /* _________ End section2 _________ */
+
+}
+
+
+@media only screen and (min-width:1600px){
+
+    /* _________ Start section1 _________ */
+
+        .image-container {
+            width: 36%;
+        }
+
+        .sec1-container {
+            background-size: 55% 116%;
+        }
+
+    /* _________ End section1 _________ */
+
+}
+
+@media only screen and (min-width:300px) and (max-width:800px){
+
+    .nav-container .btn {
+        display: none;
+
+    }
+
+    .btn-link{
+        display: none;
+    }
+
+    .section4 {
+        width: 100%;
+        overflow: hidden;
+        height: 85vh;
+    }
+    
+
+}
+
+
+@media only screen and (min-width:300px) and (max-width:500px){
+
+
+    .section4 {
+        width: 100%;
+        overflow: hidden;
+        height: 85vh;
+    }
+    
+
+}
+
+
+
